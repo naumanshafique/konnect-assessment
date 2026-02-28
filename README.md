@@ -24,6 +24,12 @@ To set up the project, follow these steps:
 5. Install CocoaPods: **`pod install`**
 6. Run the project: for android **`yarn android`**, for iOS **`yarn ios`**
 
+## Note
+
+I have used local notification with a delay of 5 seconds to trigger the calling notification so it can be tested in App's background & quit state as well. Otherwise I have to use firebase push notifications to trigger the notification in background mode.
+
+Secondly right now I've only used a notification for incoming call alert. We definitely can use Call Kit to display a full screen UI or notification along with Accept/Reject buttons for iOS. But right now Accept/Reject buttons appears only when you long press the call notification.
+
 ## Scaling Analysis
 
 How to scale this to handle 1,000+ concurrent video users (SFU/MCU vs P2P considerations)
